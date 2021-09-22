@@ -1,0 +1,7 @@
+- importing necessary libraries
+- loading the dataset
+- Split the dataset into training and testing sets
+- initializing  TfidfVectorizer. TfidfVectorizer converts a collection of raw documents into a matrix of TF-IDF features.
+- fit and transform the vectorizer on the train set, and transform the vectorizer on the test set
+- Now initializing PassiveAggressiveClassifier.Its purpose is to make updates that correct the loss. We’ll fit this on tfidf_train and y_train
+- we use test dataset for prediction from the TfidfVectorizer and calculate the accuracy with accuracy_score() from sklearn.metrics
